@@ -32,6 +32,7 @@ public class AutoAckModeDelayRetryErrorHandler implements ErrorHandler {
                     try {
                         String consumerQueue = failed.getMessageProperties().getConsumerQueue();
                         byte[] body = failed.getBody();
+                        //TODO insert DB
                         System.out.println("consumerQueue : " + consumerQueue + ", body : " + body);
                     } catch (Exception e) {
                         throw new AmqpRejectAndDontRequeueException("nack and requeue is false, trigger dead-letter", throwable);
