@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges.topic;
+package com.example.rabbitmq.exchanges.fanout;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -7,13 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-@RabbitListener(queues = "#{topicQueue01.name}")
-public class TopicQueue01Consumer {
+@RabbitListener(queues = "#{fanoutQueue01.name}")
+public class FanoutQueue01Consumer {
 
     @RabbitHandler
     public void processMessage(String message) {
-        log.info("TopicQueue01Consumer : " + message);
+        log.info("FanoutQueue01Consumer01 : " + message);
     }
-
-
 }

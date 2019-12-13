@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges.direct;
+package com.example.rabbitmq.retry;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-@RabbitListener(queues = "#{directQueue01.name}")
-public class DirectQueue01Consumer01 {
+@RabbitListener(queues = "#{workQueue01.name}")
+public class WorkQueue01Consumer01 {
 
     @RabbitHandler
     public void processMessage(String message) {
-        log.info("DirectQueue01Consumer01 : " + message);
+        log.info("WorkQueue01Consumer01 : " + message);
+        Integer value = Integer.valueOf(message);
     }
-
 
 }

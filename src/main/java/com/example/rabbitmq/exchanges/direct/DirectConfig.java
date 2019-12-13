@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges.direct;
+package com.example.rabbitmq.exchanges.direct;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

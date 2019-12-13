@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges.fanout;
+package com.example.rabbitmq.exchanges.fanout;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;

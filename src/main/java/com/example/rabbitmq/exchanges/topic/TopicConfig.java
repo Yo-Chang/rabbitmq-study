@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges.topic;
+package com.example.rabbitmq.exchanges.topic;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;

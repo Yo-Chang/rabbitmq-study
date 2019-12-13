@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.retry;
+package com.example.rabbitmq.retry;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
-package com.example.demo.rabbitmq.config;
+package com.example.rabbitmq.config;
 
-import com.example.demo.rabbitmq.retry.AutoAckModeDelayRetryErrorHandler;
+import com.example.rabbitmq.retry.AutoAckModeDelayRetryErrorHandler;
 import org.springframework.amqp.rabbit.config.DirectRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

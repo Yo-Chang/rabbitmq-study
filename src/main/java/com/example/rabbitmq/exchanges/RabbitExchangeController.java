@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.exchanges;
+package com.example.rabbitmq.exchanges;
 
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

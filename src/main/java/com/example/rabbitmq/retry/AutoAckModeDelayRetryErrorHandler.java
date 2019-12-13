@@ -1,4 +1,4 @@
-package com.example.demo.rabbitmq.retry;
+package com.example.rabbitmq.retry;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.AmqpRejectAndDontRequeueException;
